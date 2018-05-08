@@ -64,18 +64,6 @@ namespace ReadDataFromSqlite.Helper
             return (Brush)element.GetValue(BackgroundPressedProperty);
         }
 
-        public static readonly DependencyProperty BackgroundCheckedProperty = DependencyProperty.RegisterAttached(
-            "BackgroundChecked", typeof(Brush), typeof(ControlHelper), new PropertyMetadata(Brushes.Transparent));
-
-        public static void SetBackgroundChecked(DependencyObject element, Brush value)
-        {
-            element.SetValue(BackgroundCheckedProperty, value);
-        }
-
-        public static Brush GetBackgroundChecked(DependencyObject element)
-        {
-            return (Brush)element.GetValue(BackgroundCheckedProperty);
-        }
 
         #endregion
 
@@ -119,20 +107,6 @@ namespace ReadDataFromSqlite.Helper
         {
             return (Brush)element.GetValue(ForegroundPressedProperty);
         }
-
-        public static readonly DependencyProperty ForegroundCheckedProperty = DependencyProperty.RegisterAttached(
-            "ForegroundChecked", typeof(Brush), typeof(ControlHelper), new PropertyMetadata(Brushes.Black));
-
-        public static void SetForegroundChecked(DependencyObject element, Brush value)
-        {
-            element.SetValue(ForegroundCheckedProperty, value);
-        }
-
-        public static Brush GetForegroundChecked(DependencyObject element)
-        {
-            return (Brush)element.GetValue(ForegroundCheckedProperty);
-        }
-
         #endregion
 
     }
